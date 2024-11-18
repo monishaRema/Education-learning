@@ -1,0 +1,145 @@
+
+
+/* ===========about page hero section=========== */
+
+:root {
+	--primary: #0c0e2b;
+	--secondary: #5f2ded;
+	--black: #191d53;
+	--marker-color: #f2277e;
+	--white: #fff;
+	--accent-white: #fff;
+	--text-color: #c9c9c9;
+	--big-font-size: 32px;
+	--heading-font-size: 24px;
+	--sub-font-size: 18px;
+	--body-font-size: 14px;
+	--small-font-size: 10px;
+}
+
+
+
+.about{
+	padding: 80px 0;
+	
+}
+
+ 
+.about__left{
+	padding-bottom: 50px;
+	max-width: 100%;	
+}
+.about__right{
+padding-left: 0;
+}
+.about__img{
+	border-radius: 5px;
+}
+.about__text{
+	margin-bottom: 15px;
+	
+}
+.about__right .sub-head,
+.about__right .heading{
+	text-align: left;
+}
+.about__points{
+	line-height: 1.6;
+	
+}
+.about__points i{
+	margin-right: 10px;
+	color:var(--secondary);
+
+}
+
+@media screen and (min-width:992px) {
+	.about{
+	padding: 120px 0;
+	
+}
+	.about__left{
+	padding-bottom: 0;
+}
+.about__right{
+	padding-left: 60px;
+}
+	
+}
+
+/* ========================team section============ */
+
+.team{
+	padding: 80px 0;
+}
+
+.team__box{
+	margin: 15px;
+	
+}
+.team__img__box{
+	max-width: 100%;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 40px;
+	border-radius: 5px;
+	
+	
+}
+
+.team__box img{		
+	margin-bottom: 10px;
+	/* position: relative; */
+}
+.experts__name{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.experts__position{
+	font-size: 16px;
+
+}
+.team__icon__box{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	right: -100%;
+	transform: translateY(-50%);
+	transition: all 0.5s linear;
+}
+.team__icon__box i {
+	width: 40px;
+    height: 40px;
+    background: var(--marker-color);
+	color: var(--white);
+	font-size:18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-bottom: 6px;
+	transition: all 0.4s ease-in-out;
+
+}
+.team__icon__box i:hover {
+	background-color: var(--secondary);
+}
+.team__box:hover .team__icon__box{
+	right: 20px;
+}
+
+@media screen and (min-width:1200px) {
+
+	
+.team{
+	padding: 100px 0;
+  }
+
+.team__img__box{
+	margin-bottom: 40px;
+	
+}
+
+}
+	
